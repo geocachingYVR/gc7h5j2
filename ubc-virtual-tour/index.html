@@ -1,1 +1,30 @@
-
+<!DOCTYPE html>
+<!--
+GC7H5J2 - UBC Virtual Tour
+ubc-virtual-tour v0.2 | (c) Hugh Coleman
+-->
+<html>
+  <head>
+    <meta http-equiv="content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <title>GC7H5J2 - UBC Virtual Tour</title>
+    <style type="text/css">
+      #map_canvas,body,html{height:100%}#hide-dialog,#signal-stuffie{cursor:pointer}#dialog,#hide-dialog,#i,#rescueMe,#signal{position:absolute}body{margin:0;padding:0}.gm-iv-container{display:none}h1,h2,h3,h4,h5,h6{line-height:0}#signal{bottom:0;right:20px;z-index:10000}#dialog{right:170px;bottom:60px;padding:20px;min-width:320px;min-height:75px;background-color:#fff;border-radius:3px}#hide-dialog{right:9px;top:2px;font-size:29px}#dialog-text{font-family:Arial,sans-serif}#i{right:-10px;bottom:10px;border:solid #fff;border-width:0 15px 15px 0;display:inline-block;padding:15px}.right{transform:rotate(-45deg);-webkit-transform:rotate(-45deg)}#rescueMe{color:red;bottom:3px;left:90px;z-index:1000}
+    </style>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfCjfbKJxMsk3dwFuy-3OaJSZOCJ5NgwE&v=3&libraries=geometry&language=en"></script>
+    <script type="text/javascript" src="hunt.min.js"></script>
+  </head>
+  <body onload="javascript:initialize()">
+    <div id="map_canvas" style="width:100%; height:100%"></div>
+    <div id="signal">
+      <img id="signal-stuffie" src="signal.png" width="170px" height="170px" />
+      <div id="dialog">
+        <div id="hide-dialog">×</div>
+        <div id="dialog-text">Welcome to my Virtual Tour of UBC! See if you can find the stages I've left behind for you. The first stage is located right up there, by the big sign that says UBC!</div>
+        <i id="i" class="arrow right"></i>
+      </div>
+    </div>
+    <a id="rescueMe" href="#">Rescue Me!</a>
+  </body>
+</html>
